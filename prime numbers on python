@@ -1,0 +1,11 @@
+# To find the prime number(only one number)
+num=int(input("Enter prime no: "))
+if num > 1 :
+  for n in range(2, num):
+    if  (num % n) == 0 :
+      print(f"{num} is not Prime Number")
+      break
+  else:
+    print(f"{num} is Prime Number")    
+else:
+  print(f"{num} not Prime Number")  
